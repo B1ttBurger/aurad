@@ -48,7 +48,11 @@ All of the requrements provide first-rate installation documentation, but we've 
 
 Some VPS providers, such as Digital Ocean, set up new Ubuntu 18.04 instances with only the `root` user account configured. We recommend running AuraD as a regular user account rather than `root`. When you first log in, run `whoami` to check which user you are currently acting as. If the response is `root`, follow Digital Ocean's [instructions](https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-ubuntu-16-04) on adding a user and adding sudo privileges in order to run AuraD.
 
-Log out and log in to the new, non-`root` user account before proceeding.
+Log out
+```
+logout
+```
+and log back in to the new, non-`root` user account before proceeding.
 
 ### Install Docker CE
 
@@ -114,7 +118,11 @@ sudo apt install build-essential python
 ```
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 ```
-3. Log out and log back in and `nvm` [commands](https://github.com/creationix/nvm#usage) will be available from the prompt
+3. Log out
+```
+logout
+```
+and log back in and `nvm` [commands](https://github.com/creationix/nvm#usage) will be available from the prompt
 4. Install Node.js
 ```
 nvm install 10.15
